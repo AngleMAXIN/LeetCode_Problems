@@ -20,7 +20,6 @@ S 和 J 最多含有50个字母。
 """
 
 
-
 class Solution:
     def numJewelsInStones(self, J, S):
         """

@@ -45,7 +45,11 @@ func main() {
 
 输入: "Let's take LeetCode contest"
 输出: "s'teL ekat edoCteeL tsetnoc" 
-注意：在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。*/
+注意：在字符串中，每个单词由单个空格分隔，并且字符串中不会有任何额外的空格。
+
+思路: 把这个长字符串转换成byte类型,即每个字符为一个元素,遇到空格,就翻转其区间内的字符,翻转完后,left要更新
+
+*/
 
 
 func reverseWords(s string) string {
