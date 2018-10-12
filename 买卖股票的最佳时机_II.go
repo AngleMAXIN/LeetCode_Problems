@@ -39,6 +39,7 @@ func maxProfit(prices []int) int {
 	}
 	sum := 0
 	for i := 1; i < ln; i++ {
+		//一直寻找最大项,直到最大项的下一个元素变小,之所以累减,是因为和最大项减去最小项结果一样
 		sum += max(0, prices[i]-prices[i-1])
 	}
 	return sum

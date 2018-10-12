@@ -7,11 +7,13 @@ type ListNode struct {
 	Next *ListNode
 }
 
+/*
+
+ */
 func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
-	//var ptr ListNode
-	var head  = &ListNode{}
+	var head = &ListNode{}
 	var ptr = head
-	for  l1 != nil && l2 != nil {
+	for l1 != nil && l2 != nil {
 		if l1.Val < l2.Val {
 			head.Next = l1
 			l1 = l1.Next
@@ -34,6 +36,7 @@ func mergeTwoLists(l1 *ListNode, l2 *ListNode) *ListNode {
 }
 
 func main() {
+	fmt.Println("wozai gongzuo")
 	var a1, a2, a3 ListNode
 	var b1, b2, b3 ListNode
 	a1.Val = 1
@@ -48,8 +51,8 @@ func main() {
 	b2.Val = 3
 	b2.Next = &a3
 	b3.Val = 4
-	b3.Next =  nil
-	p := mergeTwoLists(&a1,&b1)
+	b3.Next = nil
+	p := mergeTwoLists(&a1, &b1)
 	fmt.Println(p)
 
 }
