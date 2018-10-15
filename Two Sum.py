@@ -1,4 +1,3 @@
-
 # problem：
 
 # Given nums = [2, 7, 11, 15], target = 9,
@@ -9,16 +8,16 @@
 
 class Solution:
     def twoSum(self, nums, target):
-    	if len(nums) < 1:
-    		return False
+        if len(nums) < 1:
+            return False
 
-    	numdict = {}
+        numdict = {}
 
-    	for i in range(len(nums)):
-    		if nums[i] in numdict:
-    			return[numdict[nums[i]],i]
-    		else:
-    			numdict[target-nums[i]] = i
+        for i in range(len(nums)):
+            if nums[i] in numdict:
+                return [numdict[nums[i]], i]
+            else:
+                numdict[target - nums[i]] = i
 
 # 思路：
 # 	首先判断列表是否为空，
