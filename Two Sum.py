@@ -13,11 +13,11 @@ class Solution:
 
         numdict = {}
 
-        for i in range(len(nums)):
-            if nums[i] in numdict:
-                return [numdict[nums[i]], i]
+        for i,v in enumerate(nums):
+            if v in numdict:
+                return [numdict[v], i]
             else:
-                numdict[target - nums[i]] = i
+                numdict[target - v] = i
 
 # 思路：
 # 	首先判断列表是否为空，
