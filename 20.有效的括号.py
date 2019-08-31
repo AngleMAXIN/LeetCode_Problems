@@ -30,5 +30,3 @@ strline = "()"
 result = s.isValid(strline)
 
 print(result)
-
-            
